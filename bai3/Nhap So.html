@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhapso" >
+<button onclick="nhan2()">x2</button>
+<button onclick="chia2()">/2</button>
+<p id="hienthi">Kết quả</p>
+</body>
+<script>
+  function nhan2() {
+    let nhapso = parseInt(document.getElementById("nhapso").value);
+    let ketqua= nhapso * 2;
+    document.getElementById("hienthi").innerText=ketqua;
+    console.log(ketqua);
+  }
+  function chia2(){
+    let nhapso=parseInt(document.getElementById("nhapso").value);
+    let ketqua= nhapso/2;
+    document.getElementById("hienthi").innerText=ketqua;
+    console.log(ketqua);
+  }
+</script>
+</html>
